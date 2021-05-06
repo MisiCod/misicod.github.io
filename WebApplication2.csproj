@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -55,6 +58,24 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -69,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3wStyleSheet.css" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -85,14 +107,7 @@
     <Content Include="icons\fa-brands-400.svg" />
     <Content Include="icons\fa-regular-400.svg" />
     <Content Include="icons\fa-solid-900.svg" />
-    <Content Include="img\126527.jpg" />
-    <Content Include="img\1340233.jpg" />
-    <Content Include="img\1340235.jpg" />
-    <Content Include="img\1340240.jpg" />
-    <Content Include="img\about-us.png" />
-    <Content Include="img\banner\banner-image.jpg" />
     <Content Include="img\banner\flag.jpg" />
-    <Content Include="img\banner\home-banner.jpg" />
     <Content Include="img\banner\images %283%29.jpg" />
     <Content Include="img\banner\kenyanflagboy.PNG" />
     <Content Include="img\banner\robot.jpg" />
@@ -101,8 +116,6 @@
     <Content Include="img\banner\wallpaperflare.com_wallpaper %282%29.jpg" />
     <Content Include="img\banner\wallpaperflare.com_wallpaper %283%29.jpg" />
     <Content Include="img\body-bg.png" />
-    <Content Include="img\brands\download.jpg" />
-    <Content Include="img\brands\logoo.png" />
     <Content Include="img\brands\Screenshot %28136%29.png" />
     <Content Include="img\brands\Screenshot %28137%29.png" />
     <Content Include="img\brands\Screenshot %28138%29.png" />
@@ -114,31 +127,8 @@
     <Content Include="img\brands\Screenshot %28505%29.png" />
     <Content Include="img\brands\Screenshot %28506%29.png" />
     <Content Include="img\client-info-bg.png" />
-    <Content Include="img\coolbackgrounds\126527.jpg" />
-    <Content Include="img\coolbackgrounds\1340233.jpg" />
-    <Content Include="img\coolbackgrounds\1340235.jpg" />
-    <Content Include="img\coolbackgrounds\1340240.jpg" />
-    <Content Include="img\coolbackgrounds\1340250 %281%29.jpg" />
-    <Content Include="img\coolbackgrounds\1558687.jpg" />
-    <Content Include="img\coolbackgrounds\1900976.jpg" />
-    <Content Include="img\coolbackgrounds\3788799.jpg" />
-    <Content Include="img\coolbackgrounds\3788806.jpg" />
-    <Content Include="img\coolbackgrounds\3788819.jpg" />
-    <Content Include="img\coolbackgrounds\bulb.jpg" />
-    <Content Include="img\istockphoto-153003536-612x612.jpg" />
-    <Content Include="img\logo.jpg" />
     <Content Include="img\footer-bg.png" />
     <Content Include="img\logo.png" />
-    <Content Include="img\logo2.png" />
-    <Content Include="img\portfolio\20210309_110421.jpg" />
-    <Content Include="img\portfolio\20210312_135625.jpg" />
-    <Content Include="img\portfolio\20210312_135627.jpg" />
-    <Content Include="img\portfolio\20210312_135716.jpg" />
-    <Content Include="img\portfolio\20210312_140338.jpg" />
-    <Content Include="img\portfolio\20210312_140340.jpg" />
-    <Content Include="img\portfolio\20210319_164314.jpg" />
-    <Content Include="img\portfolio\20210319_164318.jpg" />
-    <Content Include="img\portfolio\20210319_164357.jpg" />
     <Content Include="img\services\cad.jpg" />
     <Content Include="img\services\elecmechanical.jpg" />
     <Content Include="img\services\logo2.png" />
@@ -146,6 +136,7 @@
     <Content Include="img\services\microcontroller.png" />
     <Content Include="img\services\webdev.jpg" />
     <Content Include="img\subscribe-bg.png" />
+    <Content Include="Index.html" />
     <Content Include="JavaScript.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -171,7 +162,6 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="vendor\isotope\isotope.min.js" />
-    <Content Include="vendor\Magnific-Popup\.gitignore" />
     <Content Include="vendor\Magnific-Popup\dist\jquery.magnific-popup.js" />
     <Content Include="vendor\Magnific-Popup\dist\jquery.magnific-popup.min.js" />
     <Content Include="vendor\Magnific-Popup\dist\magnific-popup.css" />
@@ -188,22 +178,6 @@
     <Content Include="vendor\Magnific-Popup\src\js\inline.js" />
     <Content Include="vendor\Magnific-Popup\src\js\retina.js" />
     <Content Include="vendor\Magnific-Popup\src\js\zoom.js" />
-    <Content Include="vendor\Magnific-Popup\website\index.html" />
-    <Content Include="vendor\Magnific-Popup\website\site-assets\ajax\test-ajax-2.html" />
-    <Content Include="vendor\Magnific-Popup\website\site-assets\ajax\test-ajax.html" />
-    <Content Include="vendor\Magnific-Popup\website\site-assets\site.css" />
-    <Content Include="vendor\Magnific-Popup\website\third-party-libs\jquery.js" />
-    <Content Include="vendor\Magnific-Popup\website\third-party-libs\jquery.min.js" />
-    <Content Include="vendor\Magnific-Popup\website\third-party-libs\uglify.js" />
-    <Content Include="vendor\Magnific-Popup\website\third-party-libs\zepto.js" />
-    <Content Include="vendor\Magnific-Popup\website\third-party-libs\zepto.min.js" />
-    <Content Include="vendor\Magnific-Popup\website\wordpress.html" />
-    <Content Include="vendor\Magnific-Popup\website\_includes\analytics.html" />
-    <Content Include="vendor\Magnific-Popup\website\_includes\build-tool.html" />
-    <Content Include="vendor\Magnific-Popup\website\_includes\examples.html" />
-    <Content Include="vendor\Magnific-Popup\website\_includes\logo.html" />
-    <Content Include="vendor\Magnific-Popup\website\_includes\signup.html" />
-    <Content Include="vendor\Magnific-Popup\website\_layouts\default.html" />
     <Content Include="vendor\owl-carousel\css\owl.carousel.min.css" />
     <Content Include="vendor\owl-carousel\css\owl.theme.default.min.css" />
     <Content Include="vendor\owl-carousel\js\owl.carousel.min.js" />
@@ -319,17 +293,13 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="vendor\Magnific-Popup\.jshintrc" />
     <Content Include="vendor\Magnific-Popup\.travis.yml" />
     <Content Include="vendor\Magnific-Popup\bower.json" />
     <Content Include="vendor\Magnific-Popup\composer.json" />
-    <Content Include="vendor\Magnific-Popup\LICENSE" />
     <Content Include="vendor\Magnific-Popup\magnific-popup.jquery.json" />
     <Content Include="vendor\Magnific-Popup\package.json" />
-    <Content Include="vendor\Magnific-Popup\README.md" />
     <Content Include="vendor\Magnific-Popup\src\css\main.scss" />
     <Content Include="vendor\Magnific-Popup\src\css\_settings.scss" />
-    <Content Include="vendor\Magnific-Popup\website\documentation.md" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -345,6 +315,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="ViewPage1.cshtml" />
+    <Content Include="vendor\Magnific-Popup\.gitignore" />
+    <Content Include="vendor\Magnific-Popup\.jshintrc" />
+    <Content Include="vendor\Magnific-Popup\LICENSE" />
+    <Content Include="vendor\Magnific-Popup\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

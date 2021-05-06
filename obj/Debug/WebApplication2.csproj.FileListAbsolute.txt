@@ -57,3 +57,16 @@ C:\Users\andrew\source\repos\WebApplication2\obj\Debug\WebApplication2.csproj.Co
 C:\Users\andrew\source\repos\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
 C:\Users\andrew\source\repos\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\andrew\source\repos\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\andrew\source\repos\WebApplication2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Helpers.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Mvc.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Razor.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.Razor.dll
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Helpers.xml
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Mvc.xml
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.Razor.xml
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.xml
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\andrew\source\repos\WebApplication2\bin\System.Web.WebPages.Razor.xml
