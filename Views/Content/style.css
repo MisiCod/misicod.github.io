@@ -1,0 +1,540 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */
+
+.header_area {
+    background-color: saddlebrown;
+}
+.header_area .main-menu .navbar .navbar-brand {
+   
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 700 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+    .header_area .main-menu .navbar-nav .active a {
+        background: var(--gradient-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */
+
+/* Banner Area*/
+.site-main .site-banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+    .site-main .site-banner::before {
+        content: "";
+        background-image: url('../img/banner/wallpaperflare.com_wallpaper (2).jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+    }
+.site-main .site-banner .banner-col {
+    position: relative;
+    bottom: 100px;
+}
+    .site-main .site-banner .site-title {
+    position:relative;
+    top:110px;
+    }
+
+    .site-main .site-banner .site-title h3 {
+        padding-top: 5%;
+        font-weight: 500;
+        position: relative;
+        color: black;
+        line-height: 2px;
+        text-align: center;
+    }
+
+        .site-main .site-banner .site-title h3::after {
+            content: " ";
+            height: 2px;
+            width: 18vw;
+            background: black;
+            display: inline-block;
+            margin-left: 5%;
+            transform: translateY(-10px);
+            color: black;
+        }
+
+        .site-main .site-banner .site-title h1 {
+    font-size: 2.5rem;
+    line-height:50px;
+    color: black;
+}
+
+    .site-main .site-banner .site-title h4 {
+        font-size: 1.2rem;
+        line-height: 20px;
+        color: black;
+    }
+    
+    .site-main .site-banner .banner-image > img {
+        position: relative;
+        top: 100px;
+        padding: 2rem 0;
+        width: 90rem;
+    }
+
+
+
+/* End Banner Area
+     padding: 7rem 0;
+        width: 70rem;
+*/
+
+/* Start About Area  padding: 8rem 5rem;*/
+
+.site-main .about-area {
+    display: flex;
+    height: 140vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    background: url(../img/3788819.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem 0;
+    margin: 1rem auto;
+}
+    .site-main .about-area .about-title {
+        position: relative;
+        bottom: 20px;
+    }
+
+
+    .site-main .about-area .about-image > img {
+        position: relative;
+        width: 500px;
+        bottom: 20px;
+    }
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 32px/30px var(--roboto);
+    letter-spacing: 10px;
+    color: white;
+}
+
+.site-main .about-area .about-title-text .paragraph > p {
+    padding: .4rem 0;
+    color: white;
+}
+
+/* End About Area */
+
+
+/* Start Brand Area */
+
+
+
+.site-main .brand-area {
+    background-color: black;
+    padding: 1rem 20rem;
+    margin-bottom: 8rem;
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .site-main .brand-area::before {
+        content: "";
+        background-image: url('../img/banner/kenyanflagboy.PNG');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
+    .site-main .brand-area .first-row .col-lg-4 {
+        display: flex;
+        justify-content: center;
+    }
+  
+
+        .site-main .brand-area .first-row .col-lg-4 > .single-brand {
+            border: 1px solid var(--border-color);
+            text-align: center;
+            padding: 1.8rem 0rem;
+            margin: .9rem 0;
+            width: 180px;
+            height: 100px;
+            cursor: pointer;
+            transition: transform .4s ease;
+        }
+
+            .site-main .brand-area .first-row .col-lg-4 > .single-brand > img {
+                width: 50%;
+            }
+
+            .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
+                box-shadow: var(--box-shadow);
+                transform: scale(1.1);
+            }
+
+                .site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
+                    filter: brightness(0.15);
+                }
+/* Start  margin: 5rem auto;................ */
+   
+    .site-main .brand-area .experience-area {
+        content: ""; 
+        position: relative;
+        width: 200px;
+        height:10px;
+        align-content:center;
+
+    }
+
+        .site-main .brand-area .experience-area span {
+            display: block;
+        }
+
+        .site-main .brand-area .experience-area .years-area {
+            background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+            padding-bottom: 10px;
+            width: 400px;
+            position: relative;
+            bottom: 180px;
+        }
+
+        .site-main .brand-area .experience-area .bg-panel {
+            position: absolute;
+            left: -190px;
+            top: 0%;
+            background: #e029290a;
+            width: 400px;
+            height: 400px;
+            margin-left: 340px;
+            z-index: -1;
+        }
+
+        .site-main .brand-area .experience-area .years-area .years {
+            font: normal bold 84px/40px var(--roboto);
+            color: var(--primary-color2);
+            z-index: 2;
+        }
+
+        .site-main .brand-area .experience-area .years-area h2 > span {
+            font: normal 600 22px/30px var(--roboto);
+            color:whitesmoke;
+        }
+
+        .site-main .brand-area .experience-area .call-area {
+            position: relative;
+            bottom: 180px;
+            padding-left: 20rem;
+            color: whitesmoke;
+        }
+
+/* End Brand Area */
+
+/* Services Area */
+
+.site-main .services-area {
+    position: relative;
+    bottom: 200px;
+}
+
+    .site-main .services-area .services-title {
+        padding: 0 14rem;
+        position: relative;
+        top: 55px;
+        
+    }
+
+        .site-main .services-area .services-title h1 {
+            font-size: 35px;
+            top: 75px;
+            bottom: 50px;
+            color:black;
+        }
+        .site-main .services-area .services-title p {
+            font-size: 20px;
+            color: black;
+        }
+  .site-main .services-area .borderz{
+      position :relative;
+      top:30px;
+
+  }
+
+
+
+    .site-main > .services-area .services {
+        background: rgba(255,0,0,0.2);
+        padding: 2rem 0px 0px 0px;
+        width: 16rem;
+        margin: 2rem .3rem;
+        transition: box-shadow .5s ease;
+    }
+
+    .site-main > .services-area .services:hover {
+        box-shadow: 5px 10px rgba(255,0,0,0.5);
+    }
+
+
+
+/* End Services Area */
+
+
+/* Project Area */
+
+.site-main .project-area {
+    padding: 4rem 0;
+    position: relative;
+    bottom: 200px;
+}
+.site-main .project-area h1{
+    font-size: 25px;
+    line-height:20px;
+}
+    .site-main .project-area .rowgallery {
+        width: 900px;
+        height: 600px;
+        padding: 10px;
+        position: relative;
+        top: 30px;
+        background-image: url('../img/banner/wallpaperflare.com_wallpaper (1).jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden auto;
+    }
+        .site-main .project-area .rowgallery .projects-gallery {
+            padding: 2%;
+   
+        }
+            .site-main .project-area .rowgallery .projects-gallery .pic-area .img a:hover img {
+                filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+            }
+            .site-main .project-area .rowgallery .projects-gallery .text-area h2 > span {
+                display: block;
+                font: normal bold 30px/ 30px var(--roboto);
+                letter-spacing: 21px;
+                color: white;
+            }
+                .site-main .project-area .rowgallery .projects-gallery .text-area .paragraph > p {
+                    padding: .4rem 0;
+                    color: white;
+                }
+
+
+            .site-main .project-area .button-group button {
+                background: transparent;
+                border: none;
+                font: normal 500 16px/130px var(--roboto);
+                text-transform: uppercase;
+                position: relative;
+                bottom: 70px;
+            }
+
+        .site-main .project-area .button-group button + button {
+            padding-left: 3rem;
+        }
+
+/* End Project Area */
+
+
+/* About Me */
+.site-main .aboutme-area .col-about {
+    padding: 10px;
+    position: relative;
+    bottom:240px;
+    margin: 1rem auto;
+}
+.site-main .aboutme-area .col-tabs {
+    padding: 10px;
+    background-color: greenyellow;
+    background: url(../img/1340240.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom:290px;
+    margin: 3rem auto;
+}
+.site-main .aboutme-area .about-title h1{
+    padding: 1rem 7rem;
+    color: black;
+    font-size: 21px;
+    line-height:20px;
+}
+    .site-main .aboutme-area .about-title p {
+    padding: 1rem 7rem;
+    color: black;
+    font-size: 18px;
+}
+.site-main .aboutme-area .click-title h2 {
+    font: normal 400 30px/ 20px var(--roboto);
+    padding: 50px;
+}
+.site-main .aboutme-area .click-title .names {
+    font: normal 200 30px/ 20px var(--roboto);
+    color:rebeccapurple;
+}
+.site-main .aboutme-area .click-title .other p {
+    font: normal 100 21px/ 20px var(--roboto);
+    color: whitesmoke;
+}
+.site-main .aboutme-area .click-title .other h4 {
+    font: normal 300 30px/ 20px var(--roboto);
+    padding: -5%;
+    color: whitesmoke;
+}
+
+.site-main .aboutme-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+    
+}
+
+    .site-main .aboutme-area .client .client-img {
+        padding: 2rem;
+    }
+
+    .site-main .aboutme-area .client .about-client {
+        padding-top: 2rem;
+    }
+
+        .site-main .aboutme-area .client .about-client h4 {
+            font: normal 500 21px/ 20px var(--roboto);
+        }
+
+        .site-main .aboutme-area .client .about-client p {
+            font-size: 14px;
+        }
+
+.site-main .aboutme-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+
+
+
+/* End About Me */
+
+/* Subscribe me */
+.site-main .subscribe-us-area .subscribe {
+    background: url(../img/bulb.jpg) no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    margin: 3rem auto;
+    position: relative;
+    bottom: 240px;
+}
+
+    .site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+        font: normal 700 25px/30px var(--roboto);
+        color: black;
+        padding: 1rem 4rem;
+    }
+
+    .site-main .subscribe-us-area .subscribe .subscribe-title p {
+        color:black;
+        font: normal 300 21px/ 20px var(--roboto);
+        padding: 1rem 4rem;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input {
+        width: 400px;
+        padding: 1.5rem 2rem;
+        border: 1px solid whitesmoke;
+        background: transparent;
+        color: white;
+        font: normal 500 17px/20px var(--roboto);
+    }
+
+        .site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder {
+            color: whitesmoke;
+            position: relative;
+            left: 500px;
+        }
+
+    .site-main .subscribe-us-area .subscribe form .btn-submit button {
+        background: whitesmoke;
+        color: #000;
+        padding: .9rem 2rem;
+        align-items: center;
+        position :relative;
+        left: 500px;
+    }
+
+/* End subscribe me */
+
+/* Footer Area */
+
+footer.footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+    position :relative;
+    bottom :290px;
+}
+
+    footer.footer-area .social h5 {
+        font: normal 500 23px/ 30px var(--roboto);
+    }
+
+    footer.footer-area .social a > i {
+        font-size: 22px;
+        padding: 2rem;
+        color: var(--border-color);
+    }
+
+    footer.footer-area .social a:hover > i {
+        color: var(--primary-color);
+    }
+
+
+/* End Footer */ 
