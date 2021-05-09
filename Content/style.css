@@ -1,14 +1,19 @@
 
 /* import fonts from fonts.css file */ 
-@import url(./fonts.css);
+@import url(../fonts/Roboto/);
 
-
+@import url(../fonts/Roboto);
 /* css variables */ 
-@import url(./partials/_variables.css);
+@import url(../Content/partials/_variables.css);
 
 /* import global styling */ 
-@import url(./partials/_global.css);
-
+@import url(../Content/partials/_global.css);
+@import url('partials/_variables.css');
+@import url('partials/_global.css');
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+}
 
 /* start navigation */
 
@@ -98,6 +103,26 @@
             transform: translateY(-10px);
             color: black;
         }
+        .site-main .site-banner .site-title .btn {
+            position: relative;
+            left: 30%;
+            transform: translate(-50%, 0%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            --gradient-color;
+            background-image: linear-gradient(180deg, saddlebrown,gold );
+        }
+
+            .site-main .site-banner .site-title .btn:hover {
+                background-image: linear-gradient(180deg, purple, black);
+                color: white;
+            }
 
         .site-main .site-banner .site-title h1 {
     font-size: 2.5rem;
@@ -158,11 +183,40 @@
     letter-spacing: 10px;
     color: white;
 }
+    .site-main .about-area .about-title-text .btn {
+        position: relative;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        background-image: linear-gradient(180deg, purple, blue);
+       
+    }
 
-.site-main .about-area .about-title-text .paragraph > p {
-    padding: .4rem 0;
-    color: white;
-}
+        .site-main .about-area .about-title-text .btn:hover {
+            background-image: linear-gradient(180deg, purple, black);
+            color: black;
+        }
+
+
+
+
+
+
+
+
+
+    .site-main .about-area .about-title-text .paragraph > p {
+        padding: .4rem 0;
+        color: white;
+    }
+
+
 
 /* End About Area */
 
@@ -176,7 +230,7 @@
     padding: 1rem 20rem;
     margin-bottom: 8rem;
     position: relative;
-    height: 75vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -187,7 +241,7 @@
         content: "";
         background-image: url('../img/banner/kenyanflagboy.PNG');
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         top: 0px;
@@ -227,37 +281,139 @@
                     filter: brightness(0.15);
                 }
 /* Start  margin: 5rem auto;................ */
-   
-    .site-main .brand-area .experience-area {
-        content: ""; 
-        position: relative;
-        width: 200px;
-        height:10px;
-        align-content:center;
 
+
+    .site-main .brand-area .brand-img-area {
+     
+        position: relative;
+        bottom: 20px;
+        height: 450px;
     }
 
-        .site-main .brand-area .experience-area span {
-            display: block;
+
+    .site-main .brand-area .brand-img-area .brand-body {
+        font-family: Verdana, sans-serif;
+    }
+
+        .site-main .brand-area .brand-img-area .mySlides {
+            display: none;
+            position:relative;
+            max-height: 450px;
+            top:10px
         }
+            .site-main .brand-area .brand-img-area .mySlides > img {
+                vertical-align: middle;
+                display: block;
+                max-height: inherit;
+                widows: inherit;
+           
+            }
+
+            
+            /* Slideshow container */
+            .site-main .brand-area .brand-img-area .slideshow-container {
+               height:450px;
+             
+
+            }
+
+/* Caption text */
+    .site-main .brand-area .brand-img-area .text {
+        color: mediumpurple;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: relative;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+/* Number text (1/3 etc) */
+    .site-main .brand-area .brand-img-area .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+/* The dots/bullets/indicators */
+    .site-main .brand-area .brand-img-area .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        position: relative;
+        bottom:500px
+       
+    }
+
+    .site-main .brand-area .brand-img-area .active {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+    .site-main .brand-area .brand-img-area .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .site-main .brand-area .brand-img-area .text {
+        font-size: 11px
+    }
+}
+
+
+
+
+
+
+
+
+.site-main .brand-area .experience-area {
+    
+    position: relative;
+    right:2rem; 
+    align-content: center;
+   
+}
+
+    .site-main .brand-area .experience-area span {
+        display: block;
+    }
 
         .site-main .brand-area .experience-area .years-area {
             background: url(../img/client-info-bg.png) no-repeat 45px 20px;
-            padding-bottom: 10px;
-            width: 400px;
             position: relative;
-            bottom: 180px;
-        }
-
-        .site-main .brand-area .experience-area .bg-panel {
-            position: absolute;
-            left: -190px;
-            top: 0%;
-            background: #e029290a;
-            width: 400px;
-            height: 400px;
-            margin-left: 340px;
-            z-index: -1;
+          
         }
 
         .site-main .brand-area .experience-area .years-area .years {
@@ -267,22 +423,26 @@
         }
 
         .site-main .brand-area .experience-area .years-area h2 > span {
-            font: normal 600 22px/30px var(--roboto);
+            font: normal 900 30px/35px var(--roboto);
             color:whitesmoke;
         }
 
-        .site-main .brand-area .experience-area .call-area {
-            position: relative;
-            bottom: 180px;
-            padding-left: 20rem;
-            color: whitesmoke;
-        }
+    .site-main .brand-area .experience-area .call-area {
+        position: relative;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        color: whitesmoke;
+        font: normal bold 21px/26px var(--roboto);
+    }
+
+
 
 /* End Brand Area */
 
 /* Services Area */
 
 .site-main .services-area {
+
     position: relative;
     bottom: 200px;
 }
@@ -310,13 +470,11 @@
 
   }
 
-
-
     .site-main > .services-area .services {
         background: rgba(255,0,0,0.2);
-        padding: 2rem 0px 0px 0px;
+        padding:16px 30px ;
         width: 16rem;
-        margin: 2rem .3rem;
+        margin: 0.5rem 0.5rem;
         transition: box-shadow .5s ease;
     }
 
@@ -334,7 +492,7 @@
 .site-main .project-area {
     padding: 4rem 0;
     position: relative;
-    bottom: 200px;
+    bottom: 150px;
 }
 .site-main .project-area h1{
     font-size: 25px;
@@ -351,23 +509,30 @@
         background-repeat: no-repeat;
         overflow: hidden auto;
     }
-        .site-main .project-area .rowgallery .projects-gallery {
-            padding: 2%;
-   
+       
+        .site-main .project-area .rowgallery .projects-gallery .pic-area .img {
+            position: relative;
+            padding-top: 50px;
+            border-bottom: dotted;
+            border-color: whitesmoke;
+            padding-top: 20px;
         }
-            .site-main .project-area .rowgallery .projects-gallery .pic-area .img a:hover img {
-                filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-            }
+
+                .site-main .project-area .rowgallery .projects-gallery .pic-area .img a:hover img {
+                    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+                }
+
             .site-main .project-area .rowgallery .projects-gallery .text-area h2 > span {
                 display: block;
-                font: normal bold 30px/ 30px var(--roboto);
-                letter-spacing: 21px;
+                font: normal bold 20px/ 21px var(--roboto);
+                letter-spacing: 3px;
                 color: white;
             }
-                .site-main .project-area .rowgallery .projects-gallery .text-area .paragraph > p {
-                    padding: .4rem 0;
-                    color: white;
-                }
+            .site-main .project-area .rowgallery .projects-gallery .text-area .paragraph > p {
+                padding: .4rem 0;
+                color: white;
+                font-family: Georgia, serif;
+            }
 
 
             .site-main .project-area .button-group button {
@@ -388,10 +553,9 @@
 
 /* About Me */
 .site-main .aboutme-area .col-about {
-    padding: 10px;
     position: relative;
-    bottom:240px;
-    margin: 1rem auto;
+    bottom:180px;
+    margin: 7rem auto;
 }
 .site-main .aboutme-area .col-tabs {
     padding: 10px;
@@ -416,6 +580,7 @@
 .site-main .aboutme-area .click-title h2 {
     font: normal 400 30px/ 20px var(--roboto);
     padding: 50px;
+    color:whitesmoke;
 }
 .site-main .aboutme-area .click-title .names {
     font: normal 200 30px/ 20px var(--roboto);
@@ -476,15 +641,20 @@
 }
 
     .site-main .subscribe-us-area .subscribe .subscribe-title h4 {
-        font: normal 700 25px/30px var(--roboto);
+        font: normal 700 35px/37px var(--roboto);
         color: black;
         padding: 1rem 4rem;
     }
 
     .site-main .subscribe-us-area .subscribe .subscribe-title p {
         color:black;
-        font: normal 300 21px/ 20px var(--roboto);
+        font: normal 400 30px/ 30px var(--roboto);
         padding: 1rem 4rem;
+    }
+    .site-main .subscribe-us-area .subscribe .subscribe-title a {
+        color: whitesmoke;
+        font: normal 100 21px/ 24px var(--roboto);
+        padding: 1rem 2srem;
     }
 
     .site-main .subscribe-us-area .subscribe form .input-textbox input {
