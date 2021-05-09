@@ -1,7 +1,7 @@
 
-/* import fonts from fonts.css file */ 
+* import fonts from fonts.css file */ 
 @import url(../fonts/Roboto/);
-
+@import url('fonts.css');
 @import url(../fonts/Roboto);
 /* css variables */ 
 @import url(../Content/partials/_variables.css);
@@ -14,6 +14,78 @@
     font-family: 'Roboto-Black';
     src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('../fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('../fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CSS Variables */
+
+:root {
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    /* font family variables. */
+    --roboto: 'Roboto', cursive;
+} 
+
+
+
+
+
 
 /* start navigation */
 
