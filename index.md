@@ -163,51 +163,52 @@
                                     }
                                 </style>
 
+                               
                                 <div class="slideshow-container brand-body">
 
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-left">
                                         <div class="numbertext">1 / 20</div>
                                         <img src="./img/portfolio/20210319_164314.jpg" style="width:100%">
                                         <div class="text" id="gallery">Automation</div>
                                     </div>
 
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-top">
                                         <div class="numbertext">2 / 20</div>
                                         <img src="./img/portfolio/20210504_144544.jpg" style="width:100%">
                                         <div class="text">Break from work</div>
                                     </div>
 
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-zoom">
                                         <div class="numbertext">3 / 20</div>
                                         <img src="img/portfolio/IMG-20210312-WA0005.jpg" style="width:100%">
                                         <div class="text">passing knowledge </div>
                                     </div>
 
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-bottom">
                                         <div class="numbertext">4 / 20</div>
 
                                         <img src="img/portfolio/IMG-20210312-WA0003.jpg" style="width:100%">
                                         <div class="text">Teaching</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-zoom">
                                         <div class="numbertext">5 / 20</div>
 
                                         <img src="img/brands/Screenshot (136).png" style="width:100%">
                                         <div class="text"> Inventor Drawings</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-right">
                                         <div class="numbertext">6 / 20</div>
 
                                         <img src="img/brands/Screenshot (137).png" style="width:100%">
                                         <div class="text">3-d view</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-top">
                                         <div class="numbertext">7 / 20</div>
 
                                         <img src="img/portfolio/IMG-20210324-WA0004.jpg" style="width:100%">
                                         <div class="text">Presentations</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-right">
                                         <div class="numbertext">8 / 20</div>
 
                                         <img src="img/portfolio/IMG-20210322-WA0011.jpg" style="width:100%">
@@ -219,19 +220,19 @@
                                         <img src="img/portfolio/IMG-20210319-WA0006.jpg" style="width:100%">
                                         <div class="text">Team building</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-left">
                                         <div class="numbertext">10 / 20</div>
 
                                         <img src="img/brands/Screenshot (166).png" style="width:100%">
                                         <div class="text">Corel Descriptive drawings</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-bottom">
                                         <div class="numbertext">11 / 20</div>
 
                                         <img src="img/brands/Screenshot (505).png" style="width:100%">
                                         <div class="text">Corel Descriptive drawings</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-left">
                                         <div class="numbertext">12 / 20</div>
 
                                         <img src="img/portfolio/IMG-20210312-WA0004.jpg" style="width:100%">
@@ -242,7 +243,7 @@
                                         <img src="img/portfolio/IMG-20210322-WA0012.jpg" style="width:100%">
                                         <div class="text">Teamwork</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-top">
                                         <div class="numbertext">14 / 20</div>
                                         <img src="img/portfolio/IMG-20210318-WA0005.jpg" style="width:100%">
                                         <div class="text">Be on your feet</div>
@@ -252,27 +253,27 @@
                                         <img src="img/brands/Screenshot (165).png" style="width:100%">
                                         <div class="text">Corel draw prowess</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-right">
                                         <div class="numbertext">16 / 20</div>
                                         <img src="img/portfolio/20210504_144235.jpg" style="width:100%">
                                         <div class="text">Corel draw prowess</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-left">
                                         <div class="numbertext">17 / 20</div>
                                         <img src="./img/brands/Screenshot (504).png" style="width:100%">
                                         <div class="text">Corel draw prowess</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-top">
                                         <div class="numbertext">18 / 20</div>
                                         <img src="img/portfolio/20210312_135627.jpg" style="width:100%">
                                         <div class="text">Listening</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides  w3-animate-opacity">
                                         <div class="numbertext">19 / 20</div>
                                         <img src="img/portfolio/20210309_110421.jpg" style="width:100%">
                                         <div class="text">Making the PCBs</div>
                                     </div>
-                                    <div class="mySlides fade">
+                                    <div class="mySlides w3-animate-right">
                                         <div class="numbertext">20 / 20</div>
                                         <img src="img/brands/Screenshot (498).png" style="width:100%">
                                         <div class="text">
@@ -608,9 +609,9 @@
                                                     to turn an LED on or/ and off. This serves to make work easier,
                                                     and adds convenience, since it can be done remotely.
                                                 </p>
-                                                <p class="para"></p>
-                                            </div> Open <a href="#"target="_blank"><span style="color: var(--primary-color);">GitHub</span></a> for videos
-                                            ,code and more photos on the working.
+                                                <p class="para">Open <a href="#"target="_blank"><span style="color: var(--primary-color);">GitHub</span></a> for videos
+                                            ,code and more photos on the working.</p>
+                                            </div> 
                                         </div>
                                         <div class="col-sm-12 col-lg-4 col-md-6 pic-area">
                                             <div class="img">
@@ -696,7 +697,7 @@
                             <div class="w3-container col-about">
                                 <div class="about-title">
                                     <h1 class="text-uppercase title-h1" id="referees">Client Say about me</h1>
-                                    <p class="para">
+                                    <p class=" w3-container para">
                                         Below are people I have both worked with and for .
                                         Get their contacts, details and feedbacks by Clicking either of the tabs.
                                     </p>
