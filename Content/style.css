@@ -125,6 +125,7 @@ html, body {
 
 /* end navigation */
 
+
 /* Banner Area*/
 .site-main .site-banner {
     position: relative;
@@ -155,15 +156,17 @@ html, body {
     position:relative;
     top:110px;
     }
-
-    .site-main .site-banner .site-title h3 {
-        padding-top: 5%;
-        font-weight: 500;
-        position: relative;
-        color: black;
-        line-height: 2px;
-        text-align: center;
+    .site-main .site-banner .site-title {
+        font: var(--roboto);
     }
+        .site-main .site-banner .site-title h3 {
+            padding-top: 5%; 
+            position: relative;
+            color: black;
+            line-height: 2px;
+            text-align: center;
+            font: normal bold 48px/35px var(--roboto);
+        }
 
         .site-main .site-banner .site-title h3::after {
             content: " ";
@@ -187,7 +190,7 @@ html, body {
             cursor: pointer;
             border-radius: 5px;
             text-align: center;
-            --gradient-color;
+            
             background-image: linear-gradient(180deg, saddlebrown,gold );
         }
 
@@ -197,20 +200,22 @@ html, body {
             }
 
         .site-main .site-banner .site-title h1 {
-    font-size: 2.5rem;
-    line-height:50px;
-    color: black;
-}
+            font: normal bold 40px/35px var(--roboto);
+            font-size: 2.5rem;
+            line-height: 50px;
+            color: black;
+        }
 
-    .site-main .site-banner .site-title h4 {
-        font-size: 1.2rem;
-        line-height: 20px;
-        color: black;
-    }
+        .site-main .site-banner .site-title h4 {
+            font-size: 1.2rem;
+            line-height: 20px;
+            color: black;
+            font: normal bold 24px/25px var(--roboto);
+        }
     
     .site-main .site-banner .banner-image > img {
         position: relative;
-        top: 100px;
+        top: 140px;
         padding: 2rem 0;
         width: 90rem;
     }
@@ -252,7 +257,7 @@ html, body {
 .site-main .about-area .about-title h2 > span {
     display: block;
     font: normal bold 32px/30px var(--roboto);
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     color: white;
 }
     .site-main .about-area .about-title-text .btn {
@@ -275,17 +280,10 @@ html, body {
             color: black;
         }
 
-
-
-
-
-
-
-
-
     .site-main .about-area .about-title-text .paragraph > p {
         padding: .4rem 0;
         color: white;
+        font: normal 20px/22px var(--roboto);
     }
 
 
@@ -390,15 +388,16 @@ html, body {
             }
 
 /* Caption text */
-    .site-main .brand-area .brand-img-area .text {
-        color: mediumpurple;
-        font-size: 20px;
-        padding: 8px 12px;
-        position: relative;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
+        .site-main .brand-area .brand-img-area .text {
+            color: mediumpurple;
+            font-size: 22px;
+            padding: 8px 12px;
+            position: relative;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            font: normal bold var(--roboto);
+        }
 
 /* Number text (1/3 etc) */
     .site-main .brand-area .brand-img-area .numbertext {
@@ -527,14 +526,15 @@ html, body {
     }
 
         .site-main .services-area .services-title h1 {
-            font-size: 35px;
             top: 75px;
             bottom: 50px;
-            color:black;
+            color: black;
+            font: normal bold 35px var(--roboto);
         }
         .site-main .services-area .services-title p {
             font-size: 20px;
             color: black;
+            font: normal bold 20px var(--roboto);
         }
   .site-main .services-area .borderz{
       position :relative;
@@ -566,10 +566,11 @@ html, body {
     position: relative;
     bottom: 150px;
 }
-.site-main .project-area h1{
-    font-size: 25px;
-    line-height:20px;
-}
+    .site-main .project-area h1 {
+        font-size: 25px;
+        line-height: 20px;
+        font: bold 25px var(--roboto);
+    }
     .site-main .project-area .rowgallery {
         width: 900px;
         height: 600px;
@@ -638,14 +639,15 @@ html, body {
     bottom:290px;
     margin: 3rem auto;
 }
-.site-main .aboutme-area .about-title h1{
+.site-main .aboutme-area .about-title h1 {
     padding: 1rem 7rem;
     color: black;
     font-size: 21px;
-    line-height:20px;
+    line-height: 20px;
+    font: normal bold 21px var(--roboto);
 }
-    .site-main .aboutme-area .about-title p {
-   
+.site-main .aboutme-area .about-title p {
+    font: normal 18px var(--roboto);
     color: black;
     font-size: 18px;
 }
@@ -713,9 +715,9 @@ html, body {
 }
 
     .site-main .subscribe-us-area .subscribe .subscribe-title h4 {
-        font: normal 700 35px/37px var(--roboto);
+        font: normal 700 35px/35px var(--roboto);
         color: black;
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 
     .site-main .subscribe-us-area .subscribe .subscribe-title p {
@@ -726,7 +728,7 @@ html, body {
     .site-main .subscribe-us-area .subscribe .subscribe-title a {
         color: whitesmoke;
         font: normal 100 21px/ 24px var(--roboto);
-        padding: 1rem 2srem;
+        padding: 1rem 2rem;
     }
 
     .site-main .subscribe-us-area .subscribe form .input-textbox input {
